@@ -1,0 +1,150 @@
+.card-img {
+    width: 100%; /* Set the width */
+    height: 700px; /* Set the height */
+    object-fit: cover; /* Crop the image */
+    object-position: center; /* Center the cropped area */
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #1c6e8c; /* Primary color (teal) */
+    --secondary-color: #274156; /* Secondary color (dark blue) */
+    --background-color: #fbfcff; /* Background color (off-white) */
+    --text-color: #605856; /* Text color (dark gray) */
+    --accent-color: #d0ccd0; /* Accent color (light gray) */
+    --dark-color: #274156; /* Dark color for text or footer */
+}
+
+/* Body Styling */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--background-color) !important;
+}
+
+.navbar .nav-link {
+    color: var(--background-color) !important;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+/* Sections */
+section {
+    padding: 5rem 0;
+}
+
+section#about {
+    background-color: var(--background-color);
+}
+
+section#skills {
+    background-color: #fff;
+    padding-top: 5rem;
+}
+
+section#projects {
+    background-color: var(--background-color);
+    padding-top: 5rem;
+}
+
+/* Section Headings */
+h1, h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h5 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Text Container */
+.text-container {
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-text {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.fs-6 {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Links */
+a.text-white {
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.text-white:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+}
+
+/* Images */
+.img-fluid {
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
